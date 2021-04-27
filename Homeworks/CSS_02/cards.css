@@ -1,0 +1,25 @@
+.index {
+    background: url(cards.png);
+}
+.cards1 {
+    width: 139px;
+    height: 189px;
+    display: inline-block;
+    background-position: -145px -200px;
+}
+.cards2{
+    width: 139px;
+    height: 189px;
+    display: inline-block;
+    background-position: -431px -598px;
+    position:absolute;
+    left: 60px;
+}
+.cards3 {
+    width: 139px;
+    height: 189px;
+    display: inline-block;
+    background-position: -288px -1394px;
+    position:absolute;
+    left: 120px;
+}
