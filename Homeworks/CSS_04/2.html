@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            table{
+                width: 799px;
+                border-collapse: collapse;
+            }
+            th, td{
+                border-style: dotted;
+            }
+            tr:nth-child(odd){
+                background-color: silver;
+            }
+            tr:nth-child(even){
+                background-color:snow;
+            }
+            tr:nth-child(even){
+                text-align: left;
+            }
+            tr:not(:nth-child(1)){
+                text-align: left;
+            }
+            caption{
+                caption-side: bottom;
+            }
+            th:hover, td:hover{
+                background: brown;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Данные о сотрудниках</caption>
+            <tr>
+                <th>ФИО</th>
+                <td>пол</td>
+                <td>должность</td>
+                <td>дата рождения</td>
+                <td>данные01</td>
+                <td>данные02</td>
+            </tr>
+            <tr>
+                <th>Иванов Иван Иванович</th>
+                <td>м</td>
+                <td>начальник</td>
+                <td>01.01.1960</td>
+                <td>4567</td>
+                <td>78990</td>
+            </tr>
+            <tr>
+                <th>Петрова Илона Петровна</th>
+                <td>ж</td>
+                <td>секретарь</td>
+                <td>01.01.1090</td>
+                <td>6789</td>
+                <td>4567890</td>
+            </tr>
+            <tr>
+                <th>Сидоров илья игоревич</th>
+                <td>м</td>
+                <td>бухгалтер</td>
+                <td>91.03.1940</td>
+                <td>1234</td>
+                <td>3245465</td>
+            </tr>
+            <tr>
+                <th>Пупин Илья Федорович</th>
+                <td>м</td>
+                <td>водитель</td>
+                <td>15.04.1997</td>
+                <td>5678</td>
+                <td>567890</td>
+            </tr>
+            <tr>
+                <th>Лупин Сергей Иванович</th>
+                <td>м</td>
+                <td>водитель2</td>
+                <td>4.2.1993</td>
+                <td>234</td>
+                <td>12345</td>
+            </tr>
+        </table>
+    </body>
+</html>

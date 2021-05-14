@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            float: left;
+            border: ridge;
+            border: 2px solid black;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+        }
+        span{
+            display: none;
+            background-color: blue;
+            min-width: 100px;
+            text-align: center;
+            border: ridge;
+            border: 2px solid black;
+        }
+        div:hover span{
+            display: block;
+        }
+        @media all and (max-width:700px){
+            body{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>Понедельник
+        <span>Завтрак</span>
+        <span>Обед</span>
+        <span>Ужин</span>
+    </div>
+    <div>вторник</div>
+    <div>среда</div>
+    <div>четверг</div>
+    <div>пятница</div>
+    <div>суббота</div>
+    <div>воскресенье</div>
+</body>
+</html>
