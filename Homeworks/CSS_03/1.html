@@ -26,8 +26,20 @@
             border: ridge;
             border: 2px solid black;
         }
-        div:hover span{
+        span{
+            opacity: 1;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .submenu{
+            opacity: 0;
+            background-color: red;
+        }
+        div:hover ul{
             display: block;
+            opacity: 1;
+            transition: 0.5s  opacity;
         }
         @media all and (max-width:700px){
             body{
@@ -41,31 +53,46 @@
 </head>
 <body>
     <div>Понедельник
-        <span>Завтрак</span>
-        <span>Обед</span>
-        <span>Ужин</span>
+        <ul class="submenu">
+            <li>завтра</li>
+            <li>обед</li>
+            <li>ужин</li>
+        </ul>
+    </header>
     </div>
     <div>вторник
-        <span>Завтрак</span>
-        <span>Обед</span>
-        <span>Ужин</span>
+        <ul class="submenu">
+            <li>завтра</li>
+            <li>обед</li>
+            <li>ужин</li>
+        </ul>
     </div>
     <div>среда
-        <span>Завтрак</span>
-        <span>Обед</span>
-        <span>Ужин</span>
+        <ul class="submenu">
+            <li>завтра</li>
+            <li>обед</li>
+            <li>ужин</li>
+        </ul>
     </div>
-    <div>четверг<span>Завтрак</span>
-        <span>Обед</span>
-        <span>Ужин</span></div>
-    <div>пятница<span>Завтрак</span>
-        <span>Обед</span>
-        <span>Ужин</span></div>
-    <div>суббота<span>Завтрак</span>
-        <span>Обед</span>
-        <span>Ужин</span></div>
-    <div>воскресенье<span>Завтрак</span>
-        <span>Обед</span>
-        <span>Ужин</span></div>
+    <div>четверг<ul class="submenu">
+        <li>завтра</li>
+        <li>обед</li>
+        <li>ужин</li>
+    </ul></div>
+    <div>пятница<ul class="submenu">
+        <li>завтра</li>
+        <li>обед</li>
+        <li>ужин</li>
+    </ul></div>
+    <div>суббота<ul class="submenu">
+        <li>завтра</li>
+        <li>обед</li>
+        <li>ужин</li>
+    </ul></div>
+    <div>воскресенье<ul class="submenu">
+        <li>завтра</li>
+        <li>обед</li>
+        <li>ужин</li>
+    </ul></div>
 </body>
 </html>
